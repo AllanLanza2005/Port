@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff7b2, #ffd700);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffcc00;
+    color: #222;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+
+section {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+
+.foto-perfil { 
+    margin-top: -20px;
+    margin-left: -150px;
+    width: auto;
+    height: 300px;
+    border-radius: 70%;
+    border: 3px solid #ffcc00;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+}
+
+
+.info-perfil {
+    margin-top: -30px;
+    max-width: 500px;
+}
+
+
+.perfil h2 {
+    font-size: 2rem;
+    color: #cc9900;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+.perfil p {
+    margin-top: -15px;
+    font-size: 1.1rem;
+    color: #444;
+    text-align: left;
+}
+
+
+.proyectos h2,
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cc9900;
+    font-size: 2rem;
+}
+
+#lista-proyectos {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-proyectos li {
+    background-color: #ffe566;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#lista-proyectos li:hover {
+    background-color: #ffd633;
+    transform: translateX(10px);
+}
+
+
+.contacto p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contacto a {
+    color: #cc8800;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+    color: #ff9900;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .perfil h2,
+    .proyectos h2,
+    .contacto h2 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .foto-perfil {
+        width: 140px;
+        height: 140px;
+    }
+}
